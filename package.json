@@ -8,8 +8,7 @@
     "lib"
   ],
   "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com:pamt0504/momo-payment-gateway.git"
+    "type": "git"
   },
   "keywords": [
     "momo",
