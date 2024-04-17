@@ -1,6 +1,7 @@
 declare type Response = {
     payUrlWeb: string;
-    payUrlMobile: string;
+    deepLink: string;
+    qrPay: string;
 };
 export declare class MomoPayment {
     private partnerCode;
