@@ -5,7 +5,8 @@ import { hostname } from 'os';
 import { resolve } from 'path';
 import { rejects } from 'assert';
 type Response = {
-    payUrl: string
+    payUrlWeb: string
+    payUrlMobile: string
 }
 export class MomoPayment {
     private partnerCode: string;
@@ -88,7 +89,8 @@ export class MomoPayment {
                 });
                 res.on('end', () => {
                     const response: Response = {
-                        payUrl: JSON.parse(responseData).payUrl
+                        payUrlWeb: JSON.parse(responseData).payUrl,
+                        payUrlMobile: JSON.parse(responseData).deepLink
                     };
                     resolve(response);
                 });

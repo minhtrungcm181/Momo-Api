@@ -1,5 +1,6 @@
 declare type Response = {
-    payUrl: string;
+    payUrlWeb: string;
+    payUrlMobile: string;
 };
 export declare class MomoPayment {
     private partnerCode;
