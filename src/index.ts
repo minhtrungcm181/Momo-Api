@@ -85,6 +85,7 @@ export class MomoPayment {
 
                 res.setEncoding('utf8');
                 res.on('data', (chunk) => {
+                    console.log(res);
                     responseData += chunk;
                 });
                 res.on('end', () => {
